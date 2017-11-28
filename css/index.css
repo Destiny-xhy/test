@@ -1,0 +1,244 @@
+html{
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.jd-header{
+    height: 40px;
+    background: rgba(201, 21, 35, 0);    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* left:0;  */
+    max-width: 640px;
+    min-width: 320px;
+    z-index: 998;
+    
+}
+.jd-header .left{
+    height: 40px;
+    width: 75px;
+    float: left;
+    position: relative;
+}
+.jd-header .left:before{
+    width: 56px;
+    height: 20px;
+    background-position:0 -109px;
+}
+.jd-header .right{
+    height: 40px;
+    width: 50px;
+    float: right;
+    line-height: 40px;
+    text-align: center;
+}
+
+.jd-header .right a{
+    color: #fff;
+}
+.jd-header .center{
+    height: 40px;
+    margin: 0 50px 0 75px;
+    position: relative;
+}
+.jd-header .center:before{
+    left: 5px;
+    width: 19px;
+    height: 19px;
+    background-position:-60px -110px;
+}
+.jd-header .center input[type="search"]{
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 5px;
+    text-indent: 30px;
+    outline: none;
+}
+
+/*-------------- 轮播图------------- */
+.carousel{
+    overflow: hidden;
+    position: relative;
+}
+.carousel ul{
+    min-height: 143px;
+}
+.carousel ul li{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(200%);
+}
+.points{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    font-size: 0;
+    height: 10px;
+}
+.points li{
+    height: 8px;
+    width: 8px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin:0 3px;
+    background-color: #91DF08;
+}
+.points li.current{
+    background-color: red;
+}
+
+/* --------------导航开始------------ */
+.jd-nav{
+    padding: 15px 0;
+}
+.jd-nav a{
+    display: block;
+    padding: 0 15px;
+}
+.jd-nav p{
+    text-align: center;
+    line-height: 3;
+}
+
+
+/*--------------- 京东快报区----------- */
+.jd-news{
+    margin:0 7px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+}
+.jd-news > .left{
+    width: 80px;
+    height: 30px;
+    float: left;
+    position: relative;
+    
+}
+.jd-news > .right{
+    width: 38px;
+    height: 30px;
+    float: right;
+}
+.jd-news > .center{
+    height: 30px;
+    overflow: hidden;
+    margin: 0 38px 0 90px;
+}
+.scroll-wrap ul li{
+    padding: 0 10px;
+}
+
+
+
+/* ------------京东秒杀区---------------- */
+.jd-seckill{
+    margin-top: 10px;
+    background-color: #fff;
+}
+.jd-sc-txt{
+    height: 35px;
+    line-height: 35px;
+    text-indent: 30px;
+    position: relative;
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #ca1327;
+}
+.jd-sc-txt:before{
+    width: 18px;
+    height: 22px;
+    background-position:-84px -110px; 
+    left: 8px;
+    position: absolute;
+}
+.jd-sc-time{
+    font-size: 0;
+    margin-top: 6px;
+}
+.jd-sc-time span{
+    display: inline-block;
+    height: 24px;
+    background-color: #000;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 2px;
+    color: #fff;
+}
+.jd-sc-time span:nth-child(3n+1){
+    border-radius: 5px 0 0 5px;
+}
+.jd-sc-time span:nth-child(3n+2){
+    border-radius: 0 5px 5px 0;
+}
+.jd-sc-time span:nth-child(3n){
+    background-color: #fff;
+    color: #000;
+}
+.jd-sc-more a{
+    line-height: 35px;
+    margin-right:10px; 
+}
+.jd-sc-b {
+    overflow: auto;
+    /* 解决IOS默认滑动很卡的情况 */
+	-webkit-overflow-scrolling : touch;
+}
+.jd-sc-b ul{
+    width: 10000px;
+}
+.jd-sc-b ul li{
+    width: 92px;
+    float: left;
+}
+.jd-sc-b ul li a{
+    display: block;
+    padding: 2px 15px;
+    border-right: 1px solid #000;
+}
+.jd-sc-b ul li .new-price{
+    font-size: 14px;
+    text-align: center;
+    color: #D90000;
+    line-height: 1.6;
+}
+.jd-sc-b ul li .old-price{
+    font-size: 12px;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+
+/* ---------产品区------------- */
+.product-wrap{
+    position: relative;
+}
+.product-wrap a{
+    display: block;
+    padding: 10px;
+}
+.product-wrap li{
+    border-bottom: 1px solid #ccc;
+}
+.product-wrap:before{
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
